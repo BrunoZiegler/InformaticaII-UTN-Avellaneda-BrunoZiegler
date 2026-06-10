@@ -15,10 +15,10 @@ typedef struct {
     int total;
 }articulos_t;
 
-void cargarDatos(articulos_t articulos[]);
-void mostrarArticulos(articulos_t articulos[]);
-void ordenarArticulos(articulos_t articulos[]);
-int buscarArticulo(articulos_t articulos[], char descripcion_buscada[]);
+void cargarDatos(articulos_t *articulos);
+void mostrarArticulos(articulos_t *articulos);
+void ordenarArticulos(articulos_t *articulos);
+int buscarArticulo(articulos_t *articulos, char *descripcion_buscada);
 
 
 #endif
