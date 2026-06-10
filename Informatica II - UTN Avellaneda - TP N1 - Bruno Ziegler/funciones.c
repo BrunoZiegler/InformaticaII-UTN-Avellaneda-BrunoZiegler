@@ -3,7 +3,7 @@
 #include "funciones.h"
 
 
-void mostrarArticulos(articulos_t articulos[]) {
+void mostrarArticulos(articulos_t *articulos) {
 
     int i = 0;
 
@@ -20,7 +20,7 @@ void mostrarArticulos(articulos_t articulos[]) {
     }
 }
 
-int buscarArticulo(articulos_t articulos[], char descripcion_buscada[]) {
+int buscarArticulo(articulos_t *articulos, char *descripcion_buscada) {
     int i = 0;
 
     while (articulos[i].descripcion[0] != '\0' && strcmp(descripcion_buscada, articulos[i].descripcion) != 0) {
@@ -31,7 +31,7 @@ int buscarArticulo(articulos_t articulos[], char descripcion_buscada[]) {
 }
 
 
-void cargarDatos(articulos_t articulos[]) {
+void cargarDatos(articulos_t *articulos) {
     int opc = 0, i, articulo_index, sucursal;
     char articulo[90]; 
 
@@ -70,7 +70,7 @@ void cargarDatos(articulos_t articulos[]) {
 }
 
 
-void ordenarArticulos(articulos_t articulos[]) {
+void ordenarArticulos(articulos_t *articulos) {
     int i, j;
     articulos_t aux; 
     for (i = 0; i < CANT_ARTICULOS - 1; i++) {
