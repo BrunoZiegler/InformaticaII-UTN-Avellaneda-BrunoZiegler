@@ -9,6 +9,7 @@ Se trata de un sistema de validación de entrada que gestiona una cerradura elec
 
 ## Diagrama de la Máquina de Estados
 
+<img width="622" height="494" alt="Diagrama" src="https://github.com/user-attachments/assets/827eaa37-1013-450f-a0d2-c4be6e059598" />
 
 
 ## Variables y Condiciones
