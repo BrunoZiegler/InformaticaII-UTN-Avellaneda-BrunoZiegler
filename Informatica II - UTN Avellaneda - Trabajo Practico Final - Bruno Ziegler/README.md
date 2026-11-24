@@ -20,3 +20,10 @@ Se trata de un sistema de validación de entrada que gestiona una cerradura elec
 * **t:** Tiempo transcurrido desde la apertura de la puerta.
 * **t_max:** Tiempo máximo permitido con la puerta abierta.
 * **r:** Señal de reset manual de alarma (0 = Reposo, 1 = Reiniciar).
+
+## Códigos
+
+* **main.c:** Bucle infinito de la máquina de estados con punteros a funciones.
+* **mylib.h:** Estados, tiempos y prototipos.
+* **estados.c:** Funciones de estado (`f_inicio`, `f_espera`, `f_acceso`, `f_alarma`).
+* **hardware.c:** Definición de pines, inicialización del micro, lectura de entradas y manejo de salidas.
