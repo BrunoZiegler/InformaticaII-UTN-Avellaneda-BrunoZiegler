@@ -26,9 +26,9 @@ El sistema está simulado en Proteus con un ATmega128 a 16 MHz, usando la librer
 
 | Señal | Pin | Componente |
 | :--- | :--- | :--- |
-| v | PD0 | Pulsador a GND que simula el lector de tarjeta |
-| r | PD1 | Pulsador a GND de reset de alarma |
-| p | PD2 | Interruptor a GND que simula el sensor magnético (cerrado = puerta cerrada) |
+| LECTORA | PD0 | Pulsador a GND que simula el lector de tarjeta |
+| RESET | PD1 | Pulsador a GND de reset de alarma |
+| PUERTA | PD2 | Interruptor a GND que simula el sensor magnético (cerrado = puerta cerrada) |
 | Relé | PB0 | Cerradura electromagnética (1 = liberada) |
 | Buzzer | PB1 | Sirena de alarma |
 | Led verde | PB2 | Estado ESPERA |
